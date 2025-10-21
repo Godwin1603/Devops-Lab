@@ -22,10 +22,10 @@ jobs:
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install -r python-ci-docker-lab/requirements.txt
+          pip install -r requirements.txt
 
       - name: Run tests
-        run: pytest python-ci-docker-lab/tests/
+        run: pytest tests/
 
       - name: Docker meta
         id: meta
